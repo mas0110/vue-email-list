@@ -16,6 +16,15 @@
 
 <body>
 
+    <div id="app" class="p-5 text-center">
+
+        <h1>Generatore di liste Email</h1>
+        <ul class="list-group list-group-numbered">
+            <li v-for="(element,  index) in listMail" :key="index" class="list-group-item">{{element}}</li>
+        </ul>
+        <button class="btn btn-success mt-5 mx-2" @click="stampaMail">Genera la lista</button>
+        <button class="btn btn-success mt-5" @click="cancellaLista">Cancella lista</button>
+    </div>
 
 
 
